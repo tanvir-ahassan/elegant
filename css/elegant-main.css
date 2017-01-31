@@ -1,0 +1,549 @@
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800,900");
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html, body, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.row:after {
+  display: block;
+  clear: both;
+  content: '';
+}
+
+.row {
+  min-height: 1px;
+}
+
+.row + .row {
+  margin-top: 2%;
+}
+
+[class^='col-'] {
+  float: left;
+  margin-right: 2%;
+  min-height: 1px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+[class^='col-']:last-child {
+  margin-right: 0%;
+}
+
+.col-1 {
+  width: 6.5%;
+}
+
+.col-2 {
+  width: 15%;
+}
+
+.col-3 {
+  width: 23.5%;
+}
+
+.col-4 {
+  width: 32%;
+}
+
+.col-5 {
+  width: 40.5%;
+}
+
+.col-6 {
+  width: 49%;
+}
+
+.col-7 {
+  width: 57.5%;
+}
+
+.col-8 {
+  width: 66%;
+}
+
+.col-9 {
+  width: 74.5%;
+}
+
+.col-10 {
+  width: 83%;
+}
+
+.col-11 {
+  width: 91.5%;
+}
+
+.col-12 {
+  width: 100%;
+}
+
+.about, .work, .clients, .services, .skills, .footer, .banner, .counts {
+  width: 100%;
+  margin-top: 120px;
+}
+
+.header-title h1:after, .about h1:after, .work h1:after, .clients h1:after, .services h1:after, .skills h1:after, .footer h1:after, .work .col-12 h1:after, .clients .col-12 h1:after {
+  content: "";
+  display: block;
+  width: 82px;
+  border-bottom: 2px solid black;
+  margin: 60px auto;
+}
+
+.btn {
+  border: 2px solid black;
+  padding: 20px 135px;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Raleway', sans-serif;
+  line-height: 1.5;
+}
+
+ul {
+  font-size: 0px;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  margin: 0px auto;
+  display: block;
+}
+
+.clearfix:before, .clearfix:after {
+  content: "";
+  display: table;
+}
+
+.clearfix:after {
+  clear: both;
+}
+
+.clearfix {
+  *zoom: 1;
+}
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+header.header {
+  display: block;
+  position: relative;
+  z-index: 1;
+  background: url(../img/hero.jpg) no-repeat;
+  background-size: cover;
+  min-height: 900px;
+  max-width: 100%;
+  overflow: hidden;
+  color: white;
+}
+
+header.header:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  top: 0;
+}
+
+header.header .container {
+  position: relative;
+  z-index: 3;
+}
+
+.nav {
+  margin-top: 50px;
+}
+
+.brand-logo {
+  display: inline-block;
+  float: left;
+  height: 20px;
+}
+
+.navbar {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+}
+
+.navbar ul li {
+  display: inline-block;
+}
+
+.navbar ul li a {
+  color: #fff;
+  font-size: 12px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding: 20px;
+  border: 2px solid transparent;
+}
+
+.navbar ul li a:hover {
+  border: 2px solid #fff;
+}
+
+.header-title {
+  padding-top: 250px;
+  overflow: hidden;
+}
+
+.header-title h1 {
+  font-size: 42px;
+}
+
+.header-title h1:after {
+  border-bottom: 2px solid #fff;
+}
+
+.header-title p {
+  font-size: 18px;
+  max-width: 580px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.down img {
+  width: 90px;
+  height: auto;
+  margin-top: 130px;
+  margin-bottom: 20px;
+}
+
+.about h1, .work h1, .clients h1, .services h1, .skills h1, .footer h1 {
+  font-size: 30px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.about p, .work p, .clients p, .services p, .skills p, .footer p {
+  font-size: 15.6px;
+  font-weight: 400;
+  max-width: 770px;
+  margin: 0 auto;
+}
+
+.banner {
+  min-height: 500px;
+  background: url(../img/banner.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.banner .title {
+  color: #fff;
+  padding: 160px 0px;
+  text-align: left;
+}
+
+.banner .title h1 {
+  text-transform: uppercase;
+  font-size: 30px;
+}
+
+.banner .side-image img {
+  max-width: 256px;
+  margin-top: 78px;
+  height: auto;
+}
+
+.work .img-holder, .clients .img-holder {
+  width: 100%;
+  height: 470px;
+  overflow: hidden;
+}
+
+.work .col-12, .clients .col-12 {
+  display: inline-block;
+  float: right;
+  font-size: 12px;
+  position: relative;
+}
+
+.work .col-12 ul, .clients .col-12 ul {
+  margin-bottom: 90px;
+}
+
+.work .col-12 ul li, .clients .col-12 ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+.work .col-12 ul li a, .clients .col-12 ul li a {
+  color: black;
+  opacity: .7;
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 600;
+  border: 2px solid transparent;
+}
+
+.work .col-12 ul li a:hover, .clients .col-12 ul li a:hover {
+  opacity: 1;
+}
+
+.work .col-12 ul li .active, .clients .col-12 ul li .active {
+  font-weight: 800;
+  opacity: 1;
+}
+
+.more {
+  margin-top: 80px;
+}
+
+.more a {
+  display: inline-block;
+  color: black;
+  text-transform: uppercase;
+}
+
+.clients {
+  min-height: 500px;
+  background-color: #F0F1F5;
+}
+
+.clients .col-12 ul li {
+  margin: 0 25px;
+}
+
+.clients .col-12 ul li a img {
+  display: inline-block;
+  max-width: 150px;
+  height: auto;
+}
+
+.clients .col-12 h1 {
+  margin-top: 120px;
+}
+
+.quote {
+  min-height: 350px;
+  background: url(../img/quote-pic.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.quote .quote-detail {
+  margin: 90px 0;
+}
+
+.quote .quote-detail p {
+  font-size: 30px;
+  font-weight: 300;
+  color: #fff;
+  position: relative;
+}
+
+.quote .quote-detail strong {
+  font-size: 18px;
+  text-transform: uppercase;
+  text-align: right !important;
+  left: 45%;
+  position: relative;
+}
+
+.services .image-holder img {
+  width: auto;
+  height: 100px;
+}
+
+.services .dots {
+  margin-top: 80px;
+}
+
+.services .dots ul li {
+  display: inline-block;
+  margin: 0 5px;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  background-color: #d5d5d5;
+}
+
+.services .dots ul .active-dot {
+  background-color: #005494;
+}
+
+.counts {
+  min-height: 290px;
+  background: url(../img/count.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.count-num ul {
+  margin: 80px 0;
+}
+
+.count-num ul li {
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.count-num ul p {
+  font-size: 24px;
+  font-weight: 300;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.skill-text {
+  width: 80%;
+  text-align: left;
+}
+
+.skill-text h2 {
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+.skill-text p {
+  font-size: 14.4px;
+}
+
+.skill-list {
+  text-align: left;
+}
+
+.skill-list ul li p {
+  font-size: 14.4px;
+  margin: 10px auto;
+}
+
+.ps .slider, .ai .slider, .html .slider, .css .slider, .js .slider {
+  display: inline-block;
+  width: 100%;
+  height: 10px;
+  border-radius: 10px;
+  position: relative;
+  z-index: 1;
+  background-color: #eeeeee;
+}
+
+.ps .slider2, .ai .slider2, .html .slider2, .css .slider2, .js .slider2 {
+  display: inline-block;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #005494;
+  height: 10px;
+  width: 90%;
+  z-index: 3;
+}
+
+.ai .slider2 {
+  width: 75%;
+}
+
+.html .slider2 {
+  width: 65%;
+}
+
+.css .slider2 {
+  width: 85%;
+}
+
+.js .slider2 {
+  width: 70%;
+}
+
+.footer {
+  min-height: 806px;
+  background: url(../img/footer.png) no-repeat center center;
+  background-size: cover;
+  overflow: hidden;
+  color: white;
+}
+
+.footer .row {
+  margin-top: 60px;
+}
+
+.footer h1:after, .footer .work .col-12 h1:after, .work .col-12 .footer h1:after, .footer .clients .col-12 h1:after, .clients .col-12 .footer h1:after {
+  border-bottom: 2px solid white;
+}
+
+.footer .social ul li {
+  display: inline-block;
+  margin: 10px 30px;
+  font-size: 20px;
+}
+
+.footer .btn-send {
+  border: 2px solid white;
+  background: none;
+  padding: 10px 40px;
+  font-size: 18px;
+  font-weight: 600;
+  color: white;
+  cursor: pointer;
+  margin-top: 60px;
+}
+
+.form .row {
+  width: 60%;
+  margin: 40px auto;
+}
+
+.form .col-6 input {
+  width: 95%;
+  height: 45px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.form .col-6 input[name='name'] {
+  margin-right: 5%;
+}
+
+.form .col-6 input[name='email'] {
+  margin-left: 5%;
+}
+
+.form .col-12 input {
+  width: 100%;
+  height: 45px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid #fff;
+}
+
+.form input::-moz-placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.form input:focus {
+  outline: none;
+  padding: 0 15px;
+  border-bottom: 2px solid #005494;
+}
